@@ -1,4 +1,58 @@
-Ja, du kan automatisera hela processen med kod, inklusive att skapa ett GitHub-repository, generera en GitHub Actions-token, och sätta upp en workflow-fil utan att använda det grafiska gränssnittet. Här är en översikt över hur du kan göra detta med kommandoradsverktyg som GitHub CLI och GitHub API.
+### För att installera GitHub CLI kan du följa dessa steg beroende på ditt operativsystem:
+
+### På macOS
+
+1. **Använd Homebrew:**
+
+    ```bash
+    brew install gh
+    ```
+
+2. **Kontrollera installationen:**
+
+    ```bash
+    gh --version
+    ```
+
+### På Ubuntu
+
+1. **Lägg till GitHub CLI:s officiella APT-repo:**
+
+    ```bash
+    sudo apt update
+    sudo apt install gh
+    ```
+
+2. **Kontrollera installationen:**
+
+    ```bash
+    gh --version
+    ```
+
+### På Windows
+
+1. **Använd Windows Package Manager (winget):**
+
+    ```bash
+    winget install --id GitHub.cli
+    ```
+
+2. **Alternativt kan du ladda ner installationsprogrammet från [GitHub CLI:s releases-sida](https://github.com/cli/cli/releases) och köra det.**
+
+3. **Kontrollera installationen:**
+
+    ```bash
+    gh --version
+    ```
+
+### På andra Linux-distributioner
+
+Du kan använda [de officiella installationsanvisningarna från GitHub CLI:s dokumentation](https://cli.github.com/manual/installation) för att installera på andra Linux-distributioner eller via andra metoder.
+
+Efter installationen kan du logga in med `gh auth login` och börja använda GitHub CLI.
+
+---
+
 
 ### 1. Skapa ett GitHub-repository med GitHub CLI
 Du kan använda GitHub CLI för att skapa ett nytt repository och klona det lokalt:
