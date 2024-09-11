@@ -1,3 +1,10 @@
+# Automatisera CI/CD-pipeline med GitHub Actions, VM-provisionering och GitHub CLI
+
+Detta dokument beskriver hur du automatiserar skapandet av ett GitHub-repository, genererar en GitHub Actions-token, lägger till en workflow-fil och provisionerar en Azure VM som kör en självvärdad GitHub Actions-runner.
+
+---
+---
+
 ### För att installera GitHub CLI kan du följa dessa steg beroende på ditt operativsystem:
 
 ### På macOS
@@ -52,7 +59,7 @@ Du kan använda [de officiella installationsanvisningarna från GitHub CLI:s dok
 Efter installationen kan du logga in med `gh auth login` och börja använda GitHub CLI.
 
 ---
-
+---
 
 ### 1. Skapa ett GitHub-repository med GitHub CLI
 Du kan använda GitHub CLI för att skapa ett nytt repository och klona det lokalt:
